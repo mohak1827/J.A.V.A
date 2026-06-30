@@ -1,12 +1,4 @@
-//public class Hello {
-//    public static void main(String[] args){
-
-//        System.out.println("Hello there!");
-
-//    }
-//}
-
-public class Hello {
+public class variables_dataTypes {
     public static void main(String[] args){
 
         // literals
@@ -48,5 +40,6 @@ public class Hello {
         byte val2 = 30;
         int res = val1 * val2; // type promotion, as the multiplication value goes beyond the byte range(can be stored in any of higher range eg. int, float, double)
         System.out.println(res);
+
     }
 }

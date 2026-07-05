@@ -1,10 +1,55 @@
+//
+//class Calculator
+//{
+//    public int add(int n1, int n2)
+//    {
+//        int r = n1 + n2;
+//        return r;
+//    }
+//}
+//
+//public class classes_and_objects
+//{
+//    public static void main(String args[])
+//    {
+//        int num1 = 5;
+//        int num2 = 4;
+//
+////        int result = num1 + num2;
+//
+////        System.out.println(result);
+//
+//        Calculator calc = new Calculator(); // forms a new object of type calculator
+//
+//        // calc is the reference
+//
+//        int result = calc.add(num1, num2); // calling the add method using the reference
+//
+//        System.out.println(result);
+//
+//    }
+//}
 
-class Calculator
+
+
+//        Methods
+
+
+class Computer
 {
-    public int add(int n1, int n2)
+    public void playMusic()
     {
-        int r = n1 + n2;
-        return r;
+        System.out.println("Music Playing..");
+    }
+
+    public String getPen(int cost)
+    {
+        if(cost >= 10)
+        {
+            return "Pen";
+        }
+
+        return "Nothing";
     }
 }
 
@@ -12,20 +57,15 @@ public class classes_and_objects
 {
     public static void main(String args[])
     {
-        int num1 = 5;
-        int num2 = 4;
 
-//        int result = num1 + num2;
+        Computer comp = new Computer();
 
-//        System.out.println(result);
+        comp.playMusic();
 
-        Calculator calc = new Calculator(); // forms a new object of type calculator
+        String str = comp.getPen(15);
 
-        // calc is the reference
-
-        int result = calc.add(num1, num2); // calling the add method using the reference
-
-        System.out.println(result);
+        System.out.println(str);
 
     }
 }
+

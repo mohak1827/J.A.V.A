@@ -35,21 +35,60 @@
 //        Methods
 
 
-class Computer
+//class Computer
+//{
+//    public void playMusic()
+//    {
+//        System.out.println("Music Playing..");
+//    }
+//
+//    public String getPen(int cost)
+//    {
+//        if(cost >= 10)
+//        {
+//            return "Pen";
+//        }
+//
+//        return "Nothing";
+//    }
+//}
+//
+//public class classes_and_objects
+//{
+//    public static void main(String args[])
+//    {
+//
+//        Computer comp = new Computer();
+//
+//        comp.playMusic();
+//
+//        String str = comp.getPen(15);
+//
+//        System.out.println(str);
+//
+//    }
+//}
+
+
+
+        // Method overloading
+
+
+class Calculator
 {
-    public void playMusic()
+    public int add(int n1, int n2)
     {
-        System.out.println("Music Playing..");
+        return n1 + n2;
     }
 
-    public String getPen(int cost)
+    public int add(int n1, int n2, int n3)      // same method name but diifers in number of parameters
     {
-        if(cost >= 10)
-        {
-            return "Pen";
-        }
+        return n1 + n2 + n3;
+    }
 
-        return "Nothing";
+    public double add(double n1, int n2)        // differes in return type
+    {
+        return n1 + n2;
     }
 }
 
@@ -57,15 +96,21 @@ public class classes_and_objects
 {
     public static void main(String args[])
     {
+        int num1 = 5;
+        int num2 = 4;
+        int num3 = 7;
 
-        Computer comp = new Computer();
+        double num4 = 5.34;
 
-        comp.playMusic();
+        Calculator calc = new Calculator();
 
-        String str = comp.getPen(15);
+        System.out.println(calc.add(num1, num2));
 
-        System.out.println(str);
+        System.out.println(calc.add(num1, num2, num3));
+
+        System.out.println(calc.add(num4, num2));
 
     }
 }
+
 

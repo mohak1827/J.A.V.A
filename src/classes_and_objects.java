@@ -86,9 +86,9 @@ class Calculator
         return n1 + n2 + n3;
     }
 
-    public double add(double n1, int n2)        // differs in return type
+    public double add(double num1, int num2)       // differs in return type
     {
-        return n1 + n2;
+        return num1 + num2;
     }
 }
 

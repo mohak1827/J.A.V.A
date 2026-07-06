@@ -32,7 +32,7 @@
 
 
 
-//        Methods
+            // Methods
 
 
 //class Computer
@@ -112,5 +112,3 @@ public class classes_and_objects
 
     }
 }
-
-

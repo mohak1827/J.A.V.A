@@ -110,9 +110,14 @@ public class arrays
         students[1] = s2;
         students[2] = s3;
 
-        for(int i = 0; i < students.length; i++)
+//        for(int i = 0; i < students.length; i++)
+//        {
+//            System.out.println(students[i].name + " : " + students[i].marks);
+//        }
+
+        for(Student stud : students)
         {
-            System.out.println(students[i].name + " : " + students[i].marks);
+            System.out.println(stud.name + " : " + stud.marks);
         }
 
     }

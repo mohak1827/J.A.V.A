@@ -47,8 +47,7 @@ public class Inheritance
 {
     public static void main(String args[])
     {
-        B obj = new B();    // outputs - in A, in B
-
+        //B obj = new B();    // outputs - in A, in B
         // before modifying super
         // B obj1 = new B(5);  // outputs - in A, in B int
 
